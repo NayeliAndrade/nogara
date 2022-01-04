@@ -6,25 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>About me</title>
+    <title>Sobre mi</title>
 </head>
 
+<header>
+    <img id="inicio" src="" alt="">
+</header>
 <body>
-    <ul>
-        <li><a href="#yo">yo</a></li>
-        <li><a href="#¿por qué?">¿por qué?</a></li>
-        <li><a href="#comida">comida</a></li>
-        <li><a href="dia"></a>dias nublados</li>
-        <li><a href="#lugares">lugares</a></li>
-        <li><a href="#religion">religion</a></li>
-        <li><a href="#playa">playa</a></li>
-        <li><a href="#grandes héroes">grandes héroes</a></li>
-        <li><a href="#recuerdos">recuerdos</a></li>
-    </ul>
+    <nav>
+        <table>
+            <tr>
+                <td>
+                    <li><a href="pasatiempos.html">Pasatiempos</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Contacto</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Redes sociales</a></li>
+                </td>
+                <td>
+                    <li><a href="#">Portafolio</a></li>
+                </td>
+                <td>
+                    <li><a href="#"></a>Curriculum</li>
+                </td>
+                <td>
+                    <li><a href="#">Testimonial</a></li>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <table>
+        <tr>
+            <td>
+                <aside>
+                    <ul>
+                        <li><a href="#yo">¿Quién soy?</a></li>
+                        <li><a href="#¿por qué?">¿Por qué?</a></li>
+                        <li><a href="#comida">Comida</a></li>
+                        <li><a href="dia"></a>Días nublados</li>
+                        <li><a href="#lugares">Lugares</a></li>
+                        <li><a href="#religion">Religion</a></li>
+                        <li><a href="#playa">Playa</a></li>
+                        <li><a href="#grandes héroes">Grandes héroes</a></li>
+                        <li><a href="#anecdotas">Anécdotas</a></li>
+                    </ul>
+                </aside>
+            </td>
+        </tr>
+    </table>
     <div>
         <h1 id="yo">Hola mi nombre es Nayeli Andrade</h1>
         <p>Tengo 22 años, yo nací el 1 de mayo de 1999, soy de Cuernavaca, Morelos, estoy estudiado una Ingeniería en
-            sistemas, estoy en mi 3° cuatrimestre y aparte estoy estudiando en una academia que se llama Nogara DevCode. </p>
+            sistemas, estoy en mi 3° cuatrimestre y aparte estoy estudiando en una academia que se llama Nogara DevCode.
+        </p>
     </div>
 
     <div>
@@ -34,20 +71,21 @@
             futuro, aparte es tan amplia esta carrera que tiene muchas ramas para escoger la que a ti más te guste.</p>
     </div>
     <div>
-        <h2 id="comida">Mi comida favorita es el pescado, los camarones, hamburguesas y tacos</h2>
+        <h2 id="comida">Mi comida favorita es el pescado, los camarones, hamburguesas y tacos.</h2>
         <img width="100px" src="img/pescado.jpg" alt="pescado" title="pescado">
     </div>
     <div>
         <h2 id="dia"></h2>
         <img width="100px" src="img/nublado.jpg" alt="nublado" title="día nublado">
-        <p>Me gustan mucho los días nublados, los dias soliados me gusta siempre y cuando este en la playa</p>
+        <p>Me gustan mucho los días nublados, los dias soliados me gusta siempre y cuando este en la playa.</p>
     </div>
     <div>
         <h2 id="lugares">Lugares</h2>
         <img width="100px" src="img/tequesquitengo.jpg" alt="teques" title="tequesquitengo">
         <p>De los lugares donde más me gusta visitar son Tepoztlán, el centro de Morelos y tiendas comerciales.</p>
         <p>Me gusta viajar y conocer muchos lugares, desde que yo era niña siempre me he mudado mucho de casa, por
-            diferentes razones, entonces sé iniciar desde 0 muchas veces, a lo que me refiero con eso es que no me cuesta entablar
+            diferentes razones, entonces sé iniciar desde 0 muchas veces, a lo que me refiero con eso es que no me
+            cuesta entablar
             conversación o hacer actividades nuevas.</p>
         <p>En un futuro no muy lejano quiero viajar más y conocer por lo menos Latinoamérica.</p>
     </div>
@@ -61,7 +99,8 @@
         <h2 id="playa">Playa</h2>
         <img width="100px" src="img/playa.jpg" alt="playa" title="Playa de acapulco">
         <p>Me encanta ir a la playa, desde que tenía 6 meses de nacida me llevaban, antes no me gustaba el mar, pero con
-            el paso del tiempo me fui dando cuenta que me encanta y aparte tengo muchas historias y recuerdos de ese lugar.</p>
+            el paso del tiempo me fui dando cuenta que me encanta y aparte tengo muchas historias y recuerdos de ese
+            lugar.</p>
     </div>
 
     <div>
@@ -74,12 +113,34 @@
     </div>
 
     <div>
-        <h2 id="recuerdos">recuerdos chistosos</h2>
+        <h2 id="anecdotas">Anécdotas</h2>
         <p>Cuando era niña siempre me iba a la cocina de mi mamá y le quitaba sus trastes y los utilizaba como batería,
             algún día tendré mi batería de verdad.</p>
     </div>
 
-    <a href="pasatiempos.html">Pasatiempos</a>
+    <h2>Formulario</h2>
+    <label for="Nombres">Nombre</label>
+    <input type="text" name="Nombre" id="Nombre" required><br><br>
+
+    <label for="Apellido">Apellido</label>
+    <input type="text" name="Apellido" id="Apellido" required><br><br>
+
+    <label for="email">Correo electronico</label>
+    <input type="email" name="email" id="email"><br><br>
+
+    <label for="Celular">Numero celular</label>
+    <input type="number" name="Celular" id="Celular" > <br><br>
+
+    <input type="text" name="Mensaje" id="Mensaje" placeholder="Deje su mensaje aqui"> <br><br>
+
+    <input type="submit" value="Enviar"> <br><br>
+    
+
+    <a href="#inicio">Regresar arriba</a> <br><br>
+
+<footer>
+    Todos los derechos reservados del autor.2022 Nayeli Andrade
+</footer>
 </body>
 
 </html>
