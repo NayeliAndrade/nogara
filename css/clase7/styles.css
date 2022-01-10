@@ -1,0 +1,39 @@
+nav{
+
+}
+main{
+    background-color: darkgreen;
+    color:darksalmon;
+}
+
+h1{
+    background-color: aqua;
+}
+
+p{
+    background-color: blue;
+}
+
+#rojo,
+#rojo2{
+    background-color: chocolate;
+}
+
+/*#rojo2{
+    background-color: chocolate;
+}*/
+
+.rojo{
+    background-color: cornflowerblue;
+    color:darkviolet;
+}
+
+#azul{
+    background-color: darkblue;
+}
+footer{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: helvetica;
+    
+}
