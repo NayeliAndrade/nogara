@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+main{
+    background-color: #fcd8df;
+}
+#letra{
+    
+}
+header{
+    background-color: #edafc4;
+    color: black;
+    font-family:'Great Vibes';
+}
+nav{
+    background-color: rgb(174, 135, 211);
+    color: black;
+}
+aside{
+    background-color: rgb(170, 40, 90);
+    color: black;
+}
+article{
+    background-color: #ef889a;
+    text-align: left;
+    width: 200px;
+    
+}
+h3{
+    text-align: center;
+}

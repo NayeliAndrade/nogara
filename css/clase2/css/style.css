@@ -1,0 +1,44 @@
+h1{
+    font-variant: small-caps;
+    font-variant-ligatures: normal;
+    text-align: center;
+}
+a{
+    text-decoration: underline double red;
+}
+
+p{
+    text-align: justify;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-shadow: 2px 2px 6px black;
+    text-indent: 30px;
+}
+
+#name1{background-color: black;}
+#name2{background-color: #fff;}
+#name3{background-color: red;}
+#name4{background-color: green;}
+#name5{background-color: blue;}
+
+#rgb1{background-color: rgb(0, 0, 0);} 
+#rgb2{background-color: rgb(255, 255, 255);}
+#rgb3{background-color: rgb(255,0,0);}
+#rgb4{background-color: rgb(0,255,0);}
+#rgb5{background-color: rgb(0,0,255);}
+
+#hex1{background-color: #000000;}
+#hex2{background-color: #ffffff;}
+#hex3{background-color: #ff0000;}
+#hex4{background-color: #00ff00;}
+#hex5{background-color: #0000ff;}
+
+#hsl1{background-color: hsl(0,0%,0%);}
+#hsl2{background-color: hsl(0,0%,100%);}
+#hsl3{background-color: hsl(0,100%,50%);}
+#hsl4{background-color: hsl(120,100%,50%);}
+#hsl5{background-color: hsl(240,100%,50%);}
+
+#trs1{background-color: rgba(255,0,0,0.9);}
+#trs2{background-color: hsla(120,100%,50%,0.7);}
+#trs2{background-color: #00000077;}
