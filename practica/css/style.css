@@ -1,0 +1,18 @@
+h1{
+    float:right;
+}
+main{
+    float: right;
+    width: 70%;
+}
+aside{
+    float: left;
+    width: 30%;
+}
+img{
+    width: 150px;
+    
+}
+#section12{
+    width: 3 rem;
+}
