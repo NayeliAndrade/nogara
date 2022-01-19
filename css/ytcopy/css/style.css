@@ -1,12 +1,15 @@
 *{
     font-family: Arial, Helvetica, sans-serif
 }
-
+nav{
+    width: auto;
+}
 .video{
     width: 250px;
     
 }
 img{
+    
     width: 28px;
     float: left;
 }
@@ -14,4 +17,10 @@ section{
     max-width: 25%;
     min-width: none;
     float: right;
+    padding: auto;
+    margin: 4px;
+    
+}
+.abajo{
+    border-radius: 50%;
 }
