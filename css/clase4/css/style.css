@@ -17,6 +17,7 @@ img{
 }*/
 main{
     max-width: 1200px;
+    min-width: 725px;
     margin: 0 auto;
 }
 
@@ -46,6 +47,33 @@ input{
 }
 
 .boton{
-    width: 80px;
-    height: 20px;
+    padding: 7px;
+    border: 10px;
+
+    height: 25px;
+}
+
+.color1{
+    background-color: #394f7b;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.color2{
+    background-color: #ffffff;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.color3{
+    background-color: #00acee;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration:none;
+    display: inline-block;
 }
