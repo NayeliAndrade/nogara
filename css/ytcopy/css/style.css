@@ -1,12 +1,52 @@
 *{
+    background-color: #202020;
+    color: white;
     font-family: Arial, Helvetica, sans-serif
+}
+
+article{
+    width: 250px;
+
+}
+.abajo{
+    border-radius: 50%;
+    padding: 15px;
+}
+.logo{
+    width: 80px;
+    padding: 15px;
+    padding-right: 0%;
+}
+input{
+    border:1px solid #303030;
+    height: 20px;
+    width: 500px;
+    padding: 15px;
+    margin: 6px;
+    background-color: black;
+}
+.iconos{
+    float: right;
+    margin: 15px;
+}
+.camp{
+    float: right;
+}
+.search{
+    float: right;
+}
+.micro{
+    float: right;
+}
+sup{
+    padding: 0%;
+    margin: 0%;
 }
 nav{
     width: auto;
 }
 .video{
-    width: 250px;
-    
+    width: 250px;   
 }
 img{
     
@@ -14,13 +54,31 @@ img{
     float: left;
 }
 section{
+    text-align: center;
+    width: 300px;
+    height: 300px;
     max-width: 25%;
-    min-width: none;
+    min-width: auto;
     float: right;
     padding: auto;
     margin: 4px;
-    
 }
-.abajo{
-    border-radius: 50%;
+
+a{
+    background-color: rgba(255,255,255,0.1);
+    border:2px solid rgba(74,74,74,1);
+    border-radius: 25px;
+    padding: 7px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+aside{
+    border: 1px solid rgba(55,55,55,1);
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    width: 80%;
+    margin: 15px;
+    float: right;
 }
