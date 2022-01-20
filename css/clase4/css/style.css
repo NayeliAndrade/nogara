@@ -19,28 +19,30 @@ main{
     max-width: 1200px;
     margin: 0 auto;
 }
+
 html{
-    background-color: rgba(11, 94, 218, 0.863);
+    background-color: #0084d1;
     padding:  10px 100px;
     color: white;
 }
-#izquierda{
+.izquierda{
     float: left;
     text-align: left;
-    width: 50%;
-    
-    
+    width: 50%;    
 }
-#derecha{
+input{
+    border-radius: 5px;
+    padding: 8px;
+    margin: 6px;
+}
+.derecha{
     float: right;
     width: 40%;
-    height: 480px;
-    background-color: rgba(11, 94, 218, 0.999);
+    height: 496px;
+    background-color: #015799;
     text-align: center;
     padding: 0px;
     margin: 15px;
-    
-   
 }
 
 .boton{
