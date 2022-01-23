@@ -3,31 +3,26 @@
     color: white;
     font-family: Arial, Helvetica, sans-serif
 }
-
-article{
-    width: 250px;
-
-}
-.abajo{
+.lineas{
     border-radius: 50%;
-    padding: 15px;
+    padding: 0px 15px;
 }
 .logo{
     width: 80px;
-    padding: 15px;
-    padding-right: 0%;
+    padding: 0px 0px;
+    
 }
 input{
     border:1px solid #303030;
     height: 20px;
     width: 500px;
-    padding: 15px;
-    margin: 6px;
+    padding: 18px;
+    margin: 0px 394px;
     background-color: black;
 }
 .iconos{
     float: right;
-    margin: 15px;
+    margin: 3px 15px;
 }
 .camp{
     float: right;
@@ -38,33 +33,8 @@ input{
 .micro{
     float: right;
 }
-sup{
-    padding: 0%;
-    margin: 0%;
-}
-nav{
-    width: auto;
-}
-.video{
-    width: 250px;   
-}
-img{
-    
-    width: 28px;
-    float: left;
-}
-section{
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    max-width: 25%;
-    min-width: auto;
-    float: right;
-    padding: auto;
-    margin: 4px;
-}
 
-a{
+.canales{
     background-color: rgba(255,255,255,0.1);
     border:2px solid rgba(74,74,74,1);
     border-radius: 25px;
@@ -81,4 +51,48 @@ aside{
     width: 80%;
     margin: 15px;
     float: right;
+}
+.lateral{
+    width: 250px;
+    height: 100%;
+    float: left;
+    padding: 2px;
+}
+.lat{
+    margin: 8px;
+}
+.let{
+    padding:  15px 0px;
+    margin: 0px 32px;
+    text-decoration: none;
+    
+}
+li{
+    width: 236px;
+    margin: 8px;
+    padding: 2px;
+    list-style: none;
+    float: right;
+}
+.principal{
+    float: left;
+    margin: 10px;
+}
+.pri{
+    width: 350px;
+}
+h3{
+    width:340px;
+    margin: 0px;
+    padding: 11px;
+    
+}
+p{
+    padding: 0px;
+    margin: 1px 44px;
+}
+.foto{
+    
+    float: left;
+    border-radius: 50%;
 }
