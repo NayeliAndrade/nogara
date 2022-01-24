@@ -7,10 +7,30 @@ header{
     background-color: #edafc4;
     color: black;
     font-family:'Great Vibes';
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
 }
 nav{
     background-color: rgb(174, 135, 211);
     color: black;
+    text-align: center;
+}
+.nav{
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+.icono{
+    width: 30px;
+}
+.yo{
+    font-size: 20px;
+}
+
+.aside{
+    text-decoration: none;
 }
 aside{
     background-color: rgb(170, 40, 90);
@@ -24,4 +44,8 @@ article{
 }
 h3{
     text-align: center;
+}
+footer{
+    padding: 2px;
+
 }
