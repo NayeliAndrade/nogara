@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    padding: 4px;
+    margin: 10px 1px 0px 70px 
+}
+.right{
+    margin: 0px 20px;
+    color: white;
+}
+nav{
+    width: 100%;
+    background-color: rgb(2,93,94);
+    
+}
+
+header{
+    background-color: rgb(2,93,94);
+    border-radius: 0 0 0 50px;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    padding: 60px 60px 15px 60px;
+    width: 40%;
+}
+.first{
+    color: white;
+    padding: 0px 60px;
+    width: 40%;
+}
+.img1{
+    width: 40%;
+    height: 500px;
+    float: right;
+    margin: 50px;
+}
+.button1{
+    color: black;
+    background-color: #fff;
+    border: 2px solid rgb(2,93,94);
+    border-radius: 0 50px 50px 40px;
+    padding: 10px;
+    margin: 70px;
+}
+.down{
+    padding: 30px;
+}
+.down{
+    font-size: 30px;
+}
+.bar2{
+    width: 100%;
+    padding: 15px;
+    margin: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+h2{
+    color: rgb(2,93,94);
+    font-size: 50px;
+    padding: 60px 60px 0px 60px;
+}
+h3{
+    font-size: 50px;
+    padding: 0px 60px 0px 60px;
+}
+.img2{
+    width: 40%;
+    padding: 20px 60px;
+}
+.second{
+    width: 40%;
+    padding: 27px 200px 20px 47px;
+    float: right;
+}
+.second2{
+    width: 40%;
+    padding: 0px 50px;
+    margin: 0;
+    float: right;
+}
