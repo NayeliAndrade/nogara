@@ -1,85 +1,170 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: arial;
 }
 .logo{
     padding: 4px;
     margin: 10px 1px 0px 70px 
 }
-.right{
-    margin: 0px 20px;
-    color: white;
-}
 nav{
     width: 100%;
     background-color: rgb(2,93,94);
-    
+    padding: 20px 0px;
 }
-
 header{
+    display: flex;
+    background-color: rgb(2,93,94);
+    border-radius: 0, 0, 0, 150px;
+}
+a.logo{
+    color: white;
+    text-decoration: none;
+    margin: 0 55px;
+}
+a.right{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+.left{
+    width: 50%;
     background-color: rgb(2,93,94);
     border-radius: 0 0 0 50px;
 }
 h1{
     color: white;
-    font-size: 70px;
-    padding: 60px 60px 15px 60px;
-    width: 40%;
+    font-size: 40px;
+    padding: 30px 20px 0px 30px;
+    
 }
-.first{
+.paragraph{
     color: white;
-    padding: 0px 60px;
-    width: 40%;
+    padding: 0px 20px 20px 30px;
 }
 .img1{
-    width: 40%;
-    height: 500px;
-    float: right;
-    margin: 50px;
+    width: 40%; 
+}
+.brown{
+    width: 100%;
+    height: 100%;
 }
 .button1{
     color: black;
-    background-color: #fff;
-    border: 2px solid rgb(2,93,94);
-    border-radius: 0 50px 50px 40px;
+    background-color: white;
     padding: 10px;
-    margin: 70px;
+    margin: 50px 50px;
+    text-decoration: none;
+    border-radius: 0px 20px 25px 10px;
 }
 .down{
-    padding: 30px;
-}
-.down{
-    font-size: 30px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 23px;
+    margin: 30px;
 }
 .bar2{
     width: 100%;
-    padding: 15px;
-    margin: 30px;
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    padding: 34px;
+}
+.second{
+    margin: 30px;
+    display: flex;
 }
 h2{
     color: rgb(2,93,94);
-    font-size: 50px;
-    padding: 60px 60px 0px 60px;
+    margin-top: 0px
 }
-h3{
-    font-size: 50px;
-    padding: 0px 60px 0px 60px;
+.letter{
+    width: 50%;
 }
 .img2{
-    width: 40%;
-    padding: 20px 60px;
+    width: 80%;
 }
-.second{
-    width: 40%;
-    padding: 27px 200px 20px 47px;
-    float: right;
+p.pasec{
+    width: 100%;
 }
-.second2{
+p.pasec2{
+    width: 100%;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.button2{
+    background-color: rgb(2,93,94);
+    color: white;
+    text-decoration: none;
+    border-radius: 0px 20px 25px 10px;
+    padding: 10px;
+}
+.third{
+    margin: 30px;
+    display: flex;
+}
+.things{
+    width: 50%;
+}
+.par2{
+    margin: 20px 0px;
+}
+.grate{
     width: 40%;
-    padding: 0px 50px;
-    margin: 0;
-    float: right;
+}
+.img3{
+    width: 100%;
+}
+.tright{
+    text-align: right;
+}
+.line{
+    text-align: center;
+    padding-bottom:30px;
+    background-color: rgb(2,93,94);
+}
+.wi{
+    color: white;
+    padding-top: 5px;
+}
+.fourth{
+    display: flex;
+    background-color: rgb(2,93,94);
+}
+.img5{
+    width: 100%;
+}
+.img6{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.sec1{
+    width: 30%;
+}
+article{
+    color: white;
+    width: 100%;
+}
+figure{
+    width: 100%;
+}
+.pgh1{
+    padding: 5px 0px;
+}
+p.pgh2{
+    padding: 10px 0px;
+}
+.pro{
+    width: 100%;
+    color: rgb(2,93,94);
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+.prd{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+}
+footer{
+    background-color: rgb(2,93,94);
 }
