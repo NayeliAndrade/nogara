@@ -26,8 +26,13 @@ html{
     padding:  10px 100px;
     color: white;
 }
+h1{
+    border-bottom: 2px solid white;
+    padding: 20px;
+    margin: 0;
+}
 .izquierda{
-    float: left;
+    display: inline-block;
     text-align: left;
     width: 50%;    
 }
@@ -37,26 +42,32 @@ input{
     margin: 6px;
 }
 .derecha{
-    float: right;
-    width: 40%;
-    height: 496px;
+    display: inline-block;
+    max-width: 45%;
+    width: 100%; 
     background-color: #015799;
     text-align: center;
     padding: 0px;
     margin: 15px;
 }
+form{
+    margin: auto;
+    width: 70%;
+}
 
 .boton{
-    padding: 7px;
+    padding-top: 9px;
     border: 10px;
-
-    height: 25px;
+    margin: 1px;
+    height: 23px;
+    display: inline-block;
 }
 .color0{
     background-color: orange;
     color: white;
-    padding: 10px 60px;
-    margin: 15px;
+    width: 40%;
+    padding: 10px 30px;
+    margin: 14px 50px;
     text-align: center;
     display: inline-block;
     text-decoration: none;
@@ -64,10 +75,15 @@ input{
 .color1{
     background-color: #394f7b;
     color: white;
-    padding: 0px 20px;
+    padding: 0px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+}
+span{
+    padding: 10px;
+    margin: 3px;
+    text-align: center;
 }
 .color2{
     background-color: #ffffff;
