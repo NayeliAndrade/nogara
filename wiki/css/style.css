@@ -1,0 +1,30 @@
+*{
+    
+}
+nav{
+    float: right;
+    border: 0px 1px 1px 1px solid #e9f2f8 ;
+}
+h1{
+    
+    margin: 0px;
+    padding: 21px 0 0 0;
+}
+main{
+    float: right;
+    width: 70%;
+}
+aside{
+    float: left;
+    width: 30%;
+}
+img{
+    width: 150px;
+    
+}
+#section12{
+    width: 3 rem;
+}
+section{
+    border: 1px solid #a7d7f9;
+}
