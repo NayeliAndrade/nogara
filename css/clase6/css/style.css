@@ -1,0 +1,99 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*div{
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+main{
+    background-color: tomato;
+    background-image: linear-gradient(to right, black, red );
+    background-position: 10px 50px;
+    background-repeat: repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+}*/
+html,
+.gradient{
+    background-image: linear-gradient(to right top, #14140e, #2f3429, #475948, #5c806e, #6eaa9d, #6db2a9, #6cbbb6, #6bc3c4, #58acaa, #459592, #327f7a, #1f6963);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+
+}
+.logo{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.menu{
+    margin: 0 3rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.3rem;
+    color: black;
+}
+.description{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+.des{
+
+    margin: 1.5rem 0rem;
+}
+.link{
+    background-image: linear-gradient(to right top, #93d16b, #90d575, #8eda7f, #8bde88, #89e292, #83e69d, #7ee9a8, #79edb3, #70f1c2, #68f5d1, #62f8df, #5ffbed);
+    border-radius: 3rem;
+    border: 2px solid pink;
+    margin: 3rem 0rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+}
+.video{
+    margin: 2rem;
+    width: 90vh;
+  
+}
+.info{
+    display: flex;
+   background-color: #fff;
+    justify-content: space-around;
+}
+
+.people{
+    border-radius: 50%;
+    margin: 1.5rem;
+    width: 11rem;
+}
+.pres{
+    background-image: linear-gradient(to right, #b5b7a1, #a8aa8f, #9c9e7d, #8f916c, #83855b);
+    border-radius: 0.5rem;
+    margin: 2rem;
+    padding: 1rem;
+    width: 10rem;
+}
+.text{
+    background-color: #c6dbb0;
+    display: flex;
+}
+.developer{
+    margin: 2rem;
+    width: 100%;
+}
+.presentation{
+    margin: 2rem;
+    padding: 3rem;
+}
