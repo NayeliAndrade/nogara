@@ -100,3 +100,11 @@ main{
     margin: 2rem;
     padding: 3rem;
 }
+@media screen and (max-width:500px) {
+    .left{
+        display: flex;
+        flex-direction: column;
+        background-color: #08a332;
+        text-align: center;
+    }
+}
