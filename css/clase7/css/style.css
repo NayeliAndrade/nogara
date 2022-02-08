@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.marging-5{
+    margin: 5rem;
+}
+.bg-pink{
+    background-color: pink;
+}
+
+section{
+    background-color: aqua;
+    font-size: 3rem ;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    display: flex;
+}
+.inferior{
+    padding: 3rem;
+}
+section div{
+    height: 100px ;
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 50%;
+    padding: 1rem;
+    width: 10%;
+}
+@media screen and (max-width: 500px){
+    section{
+        flex-direction: column;
+    }
+    section div{
+        background-color: brown;
+        width: 100%;
+    }
+}
