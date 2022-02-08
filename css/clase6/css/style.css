@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    max-width: 1500px;
-    
+    padding: 0;    
+}
+main{
+    max-width: 1900px;
+    margin: auto 0;
 }
 /*div{
     background-color: blue;
@@ -24,8 +26,19 @@ main{
 .gradient{
     background-image: linear-gradient(to top right, #fff 0% 50%, rgb(17, 119, 119) 10%, rgb(34, 167, 144) 80%);
 }
-
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .logo{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    height: 50px;
+    margin: 2rem;
+}
+.logo1{
     background-color: #08a332;
     background-image: linear-gradient(to bottom, black, green);
     border-radius: 0.5rem;
@@ -33,78 +46,136 @@ main{
     color: #fff;
     font-size: 2rem;
     font-weight: bold;
-    margin: 0.5rem;
-    padding: 1rem;
     text-decoration: none;
-    width: 5rem;
+    border: 2px solid black;
 }
 .menu{
-    margin: 0 3rem;
+    margin: 0 0 0 2.8rem ;
     border: 2px solid black;
     border-radius: 5px;
     text-decoration: none;
-    padding: 0.3rem;
+    padding: 0.5rem;
+    background-color: white;
     color: black;
+    width: 5rem;
+    height: 2.5rem;
+    border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 .left{
     display: flex;
     justify-content: flex-end;
+    border: 2px solid rgb(94, 32, 211);
+    margin: 2rem;
 }
+
 .description{
     align-items: center;
     display: flex;
     justify-content: space-evenly;
-    margin: 3.5rem;
+    margin: 2rem;
+    border: 2px solid rgb(204, 37, 37);
+}
+.description1{
+    border: 2px solid rgb(233, 103, 16);
+    width: 40%;
+    height: 100%;
+    margin-right: 1.5rem;
 }
 .des{
     margin: 1.5rem 0rem;
+    border: 2px solid rgb(24, 233, 104);
 }
 .link{
     background-image: linear-gradient(to right top, #93d16b, #90d575, #8eda7f, #8bde88, #89e292, #83e69d, #7ee9a8, #79edb3, #70f1c2, #68f5d1, #62f8df, #5ffbed);
-    border-radius: 3rem;
+    border-radius: 1rem;
     border: 2px solid pink;
-    margin: 3rem 0rem;
     padding: 0.5rem;
+    margin: -2rem 0;
     text-decoration: none;
 }
 .video{
     margin: 1rem;
-    width: 100vh;
+    width: 100%;
+    
+    border: 2px solid rgb(100, 24, 241);
+}
+.video1{
+    width: 100%;
 }
 .info{
     display: flex;
-   background-color: #fff;
+    background-image: linear-gradient(to bottom, rgb(25, 145, 109) 0 70%, #fff 70% 100%);
     justify-content: space-around;
+    border: 2px solid rgb(175, 228, 30);
+    
 }
 .people{
     border-radius: 50%;
-    margin: 1.5rem;
     width: 11rem;
+    margin-top: 0.5rem;
+    border: 2px solid rgb(34, 150, 218);
+}
+.btnabajo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .pres{
     background-image: linear-gradient(to right, #b5b7a1, #a8aa8f, #9c9e7d, #8f916c, #83855b);
     border-radius: 0.5rem;
-    margin: 2rem;
     padding: 1rem;
+    margin: 8px;
     width: 10rem;
+    border: 2px solid rgb(23, 216, 230);
 }
 .text{
     background-color: #c6dbb0;
     display: flex;
+    border: 2px solid black;
+    margin-top: 2rem;
 }
 .developer{
     margin: 2rem;
     width: 100%;
+    border: 2px solid rgb(212, 15, 15);
 }
 .presentation{
     margin: 2rem;
     padding: 3rem;
+    border: 2px solid rgb(42, 5, 177);
 }
-@media screen and (max-width:500px) {
+.info1{
+    border: 2px solid black;
+}
+@media screen and (max-width:800px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .left{
         display: flex;
         flex-direction: column;
-        background-color: #08a332;
         text-align: center;
+    }
+    .info,
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info1{
+        margin: 2rem;
+    }
+    .developer,
+    .presentation{
+        width: 80%;
+        margin: 0;
+    }
+    .center{
+        margin: 1rem;
     }
 }
