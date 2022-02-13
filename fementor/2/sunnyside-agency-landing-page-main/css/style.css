@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+}
+.encabezado{
+    background-color: #5ECCFF;
+}
+.primera_sec{
+    display: flex;
+    flex-direction: row;
+}
+.huevo{
+    align-items: center;
+    background-color: #FFD302;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.rosa_color{
+    align-items: center;
+    background-color: #FF807A;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+.copa{
+    width: 250px;
+}
+.arriba{
+    color: white;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    padding: 1rem 1.5rem;
+}
+.prin{
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+h1{
+    padding: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+.transform, 
+.stand{
+    padding: 1.5rem;
+}
+.transform h2,
+.stand h2{
+    color: black;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.transform p,
+.stand p{
+    color: rgb(110, 110, 110);
+    margin: .5rem;
+    text-align: center;
+}
+.transform a,
+.stand a{
+    align-items: center;
+    box-shadow: 2px 2px 2px #FF807A;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fraunces', serif;
+    font-size: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.cosas,
+.frutas{
+    display: flex;
+    flex-direction: column;
+}
+.cosas, 
+.frutas p{
+    text-align: center;
+}
+.cosas,
+.frutas h2{
+    color: hsl(167, 40%, 24%);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.cereza{
+    align-items: center;
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+}
+.cereza p,
+.naranja p{
+    color: rgb(75, 75, 75);
+    display: flex;
+}
+.naranja{
+    align-items: center;
+    background-color: #5ECCFF;
+    display: flex;
+    flex-direction: column;
+}
+.img_naranja, .img_cereza{
+    align-items: center;
+    display: flex;
+    width: 350px;
+}
+.texto{
+    padding: 3rem 0.5rem;
+}
+/*2*/
+.testimonial{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.clientes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+}
+.titulo{
+    align-items: center;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+.circulo{
+    border-radius: 50%;
+    margin: 2rem;
+    width: 3rem;
+}
+.clientes p{
+    color: rgb(114, 113, 113);
+    text-align: center;
+}
+.tarjeta{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    width: 400px;
+}
+.nombre_cliente{
+    color: black;
+    font-family: 'Fraunces', serif;
+    margin-top: 2rem;
+}
+.cargo{
+    color: rgb(165, 164, 164);
+    font-family: 'Barlow', sans-serif;
+    font-size: 12px;
+}
+/*3*/
+.imagenes{
+    display: flex;
+    flex-direction: column;
+}
+.uno, .dos{
+    display: flex;
+}
+.botellas{
+    background-color: #40B2EE;
+    height: 16rem;
+    width: 250px;
+}
+.sarten{
+    background-color: #F98700;
+    height: 16rem;
+    width: 250px;
+}
+.cono{
+    background-color: #49C5FB;
+    height: 16rem;
+    width: 250px;
+}
+.azucar{
+    background-color: #FF807A;
+    height: 16rem;
+    width: 250px;
+}
+/*footer*/
+footer{
+    align-items: center;
+    background-color: #90D4C5;
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    color: hsl(168, 34%, 41%);
+    font-family: 'Fraunces', serif;;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 2rem 0;
+}
+.menu, .menu2{
+    display: flex;
+    list-style: none;
+}
+.lim{
+    margin-bottom: 1rem;
+}
+
+.menu2 a{
+    color: hsl(168, 34%, 41%);
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    margin: .5rem;
+    padding: .8rem;
+    text-decoration: none;
+}
+.menu a{
+    color: hsl(168, 34%, 41%);
+    font-weight: bold;
+    margin: .5rem;
+    padding: .8rem;
+    text-decoration: none;
+}
+.iconos img{
+    margin: .8rem; 
+    padding: 2.2rem 0.5rem;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width: 690px ){
+    .prin img{
+        width: 50%;
+    }
+    .huevo_copa{
+        display: flex;
+        flex-direction: column;
+    }
+    .huevo{
+        background-color: #FFD302;
+        width: 50%;
+    }
+    .transform{
+        width: 50%;
+    }
+    .menu a{
+        color: white;
+    }
+    .cosas,
+    .frutas {
+        display: flex;
+        flex-direction: row;
+    }
+    .rosa_color{
+        background-color: #FF807A;
+        padding: 1.5rem;
+        width: 50%;
+    }
+    .stand{
+        width: 50%;
+    }
+    .text_transform,
+    .text_stand{
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        padding: 3.5rem;
+    }
+    .text_stand p,
+    .text_transform p{
+        text-align: left;
+    }
+    .rosa{
+        display: flex;
+        flex-direction: row;
+    }
+    .naranja, .cereza{
+        width: 50%;
+    }
+    .texto{
+        margin: 2rem;
+        padding: 1rem;
+        width: 378px;
+    }
+    .clientes{
+        display: flex;
+        flex-direction: row;
+    }
+    .imagenes{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .uno, .dos,
+    .botellas, .sarten, .cono, .azucar{
+        width: 100%;
+    }
+    .lim{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
