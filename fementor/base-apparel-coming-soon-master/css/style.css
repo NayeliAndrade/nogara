@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    padding: 2rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+body{
+    margin: 0 auto;
+    max-width: 966px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-tittle: hsl(0, 6%, 24%); /*crea variables*/
+    --color-p: hsl(0, 36%, 70%);
+    --ffamily: 'Josefin Sans', sans-serif;
+    --fsize:40px;
+    --fweight-tittle:600;
+    --fweight-btn:300;
+    --weight-p:400;
+    --padding-h1:2rem;
+    --margin-header:2rem;
+}
+header{
+    margin: var(--margin-header);
+}
+.image{
+    background-image: url(../img/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+    order: 1;
+}
+.text{
+    order: 2;
+}
+h1:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+}
+.text h1:first-of-type{
+    text-align: center;
+    padding: var(--padding-h1);
+    font-weight: var(--fweight-tittle);
+    font-size: var(--fsize);
+    font-family: var(--ffamily);
+    text-transform: uppercase;
+}
+.text span:first-of-type{
+    color: var(--color-p);
+}
+.text p:first-of-type{
+    color: var(--color-p);
+    font-family: var(--ffamily);
+    font-weight: var(--fweight-p);
+    text-align: center;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+.text div{
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text a{
+    border: 2px solid var(--color-p);
+    width: 20rem;
+    border-radius: 10rem;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--color-p);
+}
+p:hover{
+    transform: skew(10deg); 
+    overflow: hidden;
+}
+@media screen and (min-width:800px) {
+    header{
+        width: 50%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    .image{
+        background-image: url(../img/hero-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 100vh;
+        width: 60vw;
+        order: 2;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+}
