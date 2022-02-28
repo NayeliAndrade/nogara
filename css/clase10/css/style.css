@@ -1,0 +1,62 @@
+:root{
+    --primary:red; /*crea variables*/
+    --font:mayan;
+    --fweight:25px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    background-color: aqua;
+    margin: 1rem 0;
+}
+section>div{
+    color: rgb(209, 135, 25);
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    transition: .5s;
+}
+section>div:hover{
+    background-color: #fff !important; /*nivel de importancia*/
+    cursor: pointer;
+    height: 6rem;
+    font-size: 3rem;
+    /*transform: rotateX(45deg); rotacion x, y, z
+    transform:translatex(10px); 100% -0 pop op
+    overflow: hidden; se pone al contenedor 
+    transform: scale(1.5);
+    transform: skew(10deg); estirar
+    transform: matrix(1,0,0,1,0,1); junta todos
+    perspective: 100px;
+    */
+
+}
+section:first-child >div{
+    color: blueviolet;
+    font-weight: bold;
+    text-shadow:0 0 8px rgb(221, 17, 17);
+}
+section:nth-child(2)>div{
+    color: blueviolet;
+    font-weight: bold;
+    text-shadow:0 0 8px rgb(92, 9, 226);
+    background-color: var(--primary);
+}
+section:nth-child(3)>div{
+    color: rgb(219, 3, 183);
+    font-weight: normal;
+    text-shadow: 0 0 8px rgb(219, 3, 183);
+}
+section:last-of-type> div{
+    color: rgb(29, 211, 126);
+    font-weight: normal;
+    text-shadow: 0 0 8px rgb(61, 35, 207);
+}
+div:first-child{
+    font-family: var(--font);
+}
