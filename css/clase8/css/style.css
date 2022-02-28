@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: aqua;
+    padding: 1rem;
+    position: fixed;
+    left: 10px;
+    top: 0;
+}
+section{
+    margin-top: 3rem;
+    background-image: url(../img/favicon.ico);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /*list-style: thai;
+    list-style-position: outside;
+    list-style-image: url(../img/favicon.ico);*/
+}
+section p{
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-shadow: 0 0 11px white;
+}
+div{
+    background-color: blue;
+    padding: 1rem;
+}
+h1{
+    background-color: black;
+    color: aliceblue;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
