@@ -1,0 +1,30 @@
+@use 'variables';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: variables.$primary-color;
+    color: azure;
+    font-size: 3rem;
+    text-align: center;
+    padding: 5rem;
+}
+main{
+    padding: 2rem;
+    div{
+        font-size: 3rem;
+        color: black;
+
+        &:hover{
+            background-color: black;
+            padding: 2rem;
+        }
+        h2{
+            border: 2px solid black;
+            background-color: aqua;
+        }
+    }   
+}
