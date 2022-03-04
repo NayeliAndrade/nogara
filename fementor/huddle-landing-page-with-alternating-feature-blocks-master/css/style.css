@@ -5,9 +5,9 @@
     margin: 0;
     padding: 0;
 }
-body{
+main{
     margin: 0 auto;
-    max-width: 1900px;
+    max-width: 1400px;
 }
 nav{
     align-items: center;
@@ -52,7 +52,6 @@ header section div:first-child{
 header section p{
     color: hsl(192, 100%, 9%);
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
     font-weight: 400;
     margin: 2rem;
     text-align: center;
@@ -66,6 +65,8 @@ header section p{
     padding: .9rem 3rem;
     text-decoration: none;
     width: 16rem;
+    display: block;
+    margin: auto;
 }
 .btn2:hover{
     background-color: hsl(322, 68%, 75%);
@@ -74,6 +75,18 @@ header section p{
     padding: 2.5rem;
     width: 100%;
 }
+.ilustration:hover{
+    transform: rotate(27deg);
+}
+/*transform: rotateX(45deg); rotacion x, y, z
+    transform:translatex(10px); 100% -0 pop op
+    overflow: hidden; se pone al contenedor 
+    transform: scale(1.5);
+    transform: skew(10deg); estirar
+    transform: matrix(1,0,0,1,0,1); junta todos
+    perspective: 100px;
+    */
+
 .cards{
     margin: 1rem;
 }
@@ -81,6 +94,9 @@ header section p{
     border-radius: 1rem;
     box-shadow: 0px 1px 7px 1px hsl(208deg 11% 55%);
     margin-top: 2.5rem;
+}
+.image:hover{
+    transform: scale(1.5);
 }
 .image{
     padding: 3rem;
@@ -106,6 +122,9 @@ h2{
     position: relative;
     text-align: center;
     top: 4rem;
+    box-shadow: 0px 1px 7px 1px hsl(208deg 11% 55%);
+
+    
 }
 footer{
     background-color: hsl(192, 100%, 9%);
@@ -114,11 +133,13 @@ footer{
     flex-direction: column;
     padding-top: 5.5rem;
     padding: 1rem;
+   
 }
 
 .icon li:nth-child(1){
     list-style-image: url(../img/icon-location.svg);
     padding: .5rem;
+    margin-top: 1rem;
 }
 .icon li:nth-child(2){
     list-style-image: url(../img/icon-phone.svg);
@@ -148,6 +169,7 @@ a{
 .links li{
     padding: .5rem;
 }
+.copyright,
 .attribution { 
     font-size: 11px;
     text-align: center; 
@@ -158,10 +180,33 @@ a{
 .copyright{
     color: #fff;
 }
+.margin-auto{
+    margin: 0 auto;
+    max-width: 1400px;
+}
 @media screen and (min-width:800px) {
+    h1,h2{
+        font-size: 40px;
+        padding: 0 2rem;
+    }
+    p{
+        font-size: 20px;
+    }
     header section{
-        display: flex;
-    }   
+        display: flex;  
+    } 
+    header section div:first-child{
+        align-items: flex-start;
+    }
+    .btn2{
+        margin: 0 2rem;
+    } 
+    .center{
+        margin: auto;
+    }
+    header section p{
+        text-align: left;
+    } 
    .card{
     display: flex;
     flex-direction: row;
@@ -180,9 +225,13 @@ a{
    .ready{
     display: flex;
     justify-content: space-around;
+    width: 50rem;
+    display: block;
+    margin: auto;
    }  
    footer{
        padding: 5rem;
+       
    }
    footer div{
     display: flex;
@@ -192,9 +241,12 @@ a{
    }
    .links{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .links li{
+       width: 50%;
    }
    .copyright{
-     align-self: flex-end;  
+     align-self: center;  
    }
 }
