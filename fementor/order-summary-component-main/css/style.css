@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+:root{
+    --bgc-plan:hsl(225, 100%, 94%);
+    --bgc-btn:hsl(245, 75%, 52%);
+    --bgc-card:hsl(225, 100%, 98%);
+    --bgc-anun:hsl(224, 23%, 55%);
+    --c-tittle:hsl(223, 47%, 23%);
+}
+body{
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+main{
+    border: 2px solid rgb(228, 225, 225);
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: #fff;
+}
+h1{
+    text-align: center;
+    font-weight: 900;
+    padding: 1rem;
+}
+p{
+    text-align: center;
+    color: rgb(107, 107, 107);
+    font-weight: 500;
+}
+
+.img1{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    -moz-border-radius: 1rem 1rem 0 0;
+    -ms-border-radius: 1rem 1rem 0 0;
+    -o-border-radius: 1rem 1rem 0 0;
+}
+
+.plan{
+    display: grid;
+    width: 80%;
+    margin: 1rem auto;
+    padding: .5rem;
+    grid-template-columns: 48px 30% 40%;
+    align-items: center;
+    background-color: var(--bgc-card);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+} 
+
+.plan div:last-child{
+    grid-column: 4/5;
+}
+.price{
+    padding: .5rem;
+}
+.btns{
+    margin: auto;
+    padding: 1rem 2rem 0;
+    width: 95%;
+}
+.btn-blue{
+    text-align: center;
+    background-color: #382AE1;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    margin: auto;
+    border-radius: .5rem;
+    box-shadow: 2px 6px 7px  rgb(192, 186, 252);
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.btn-white{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    margin: 1.5rem;
+    color: rgb(143, 142, 142);
+    font-weight: bold;
+    display: block;
+}
