@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer,
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.first-section nav {
+  background-color: #3ebfff;
+  padding: 1rem;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+.first-section nav ul {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+.first-section nav ul li {
+  list-style: none;
+}
+.first-section nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.first-section h1 {
+  color: white;
+  background-color: #3ebfff;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.second-section h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  margin: 3rem 1.5rem 1rem 1.5rem;
+  font-size: 28px;
+}
+.second-section p {
+  font-family: "Barlow", sans-serif;
+  color: #5a636c;
+  padding: 0.5rem;
+}
+.second-section a {
+  color: black;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.third-section .orange, .third-section .cherry {
+  padding-bottom: 1rem;
+}
+.third-section .orange h2, .third-section .cherry h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: #19536b;
+  padding: 0.5rem;
+}
+.third-section .orange p, .third-section .cherry p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: #19536b;
+  padding: 1rem;
+}
+.third-section .orange {
+  background-color: #62ccfe;
+}
+.third-section .cherry {
+  background-color: #9adacc;
+}
+
+.testimonial h2 {
+  color: #a7abae;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3rem 0 0;
+}
+.testimonial .img-testimonial {
+  width: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 1rem;
+}
+.testimonial .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.testimonial .card .name {
+  color: black;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  padding: 0.5rem;
+}
+.testimonial .card .director {
+  color: #5a636c;
+}
+
+.section-imgs div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section-imgs div img {
+  width: 50%;
+}
+
+footer {
+  background-color: #458c7e;
+}
+footer p {
+  color: #19536b;
+  text-align: center;
+  padding: 2rem;
+  font-size: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+footer .iconos {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .iconos img {
+  padding: 0.1rem;
+  width: 25px;
+  margin-bottom: 2rem;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+footer ul li {
+  padding: 1rem;
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #19536b;
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  .second-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .second-section h2 {
+    font-size: 55px;
+    margin: 0;
+  }
+  .second-section p {
+    font-size: 26px;
+  }
+  .second-section h2, .second-section p {
+    text-align: left;
+  }
+  .second-section div:nth-child(4),
+.second-section div:nth-child(2) {
+    padding: 3.5rem;
+  }
+  .second-section div:nth-child(1) {
+    order: 2;
+  }
+  .second-section div:nth-child(2) {
+    order: 1;
+  }
+  .second-section div:nth-child(3) {
+    order: 3;
+  }
+  .second-section div:nth-child(4) {
+    order: 4;
+  }
+
+  .third-section {
+    display: flex;
+  }
+
+  .testimonial div:nth-child(2) {
+    display: flex;
+  }
+
+  .section-imgs div {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-imgs div img {
+    width: 25%;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  footer .iconos img {
+    padding: 1rem;
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
