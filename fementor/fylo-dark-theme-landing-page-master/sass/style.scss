@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$bgc-email:hsl(217, 28%, 15%);
+$bgc-main:hsl(218, 28%, 13%);
+$bgc-footer:hsl(216, 53%, 9%);
+$bgc-testimonial:hsl(219, 30%, 18%);
+$color-text:hsl(0, 0%, 100%);
+
+.ilustration{
+    width: 100%;
+}
+main{
+    background-color: $bgc-main;
+    padding: 1rem;
+}
+footer{
+    background-color: $bgc-footer;
+    padding: 1rem;
+}
+h1,h2,h3,p,a,li{
+    color: $color-text;
+}
+nav{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+h1,h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+}
+h2{
+    padding: 1rem 0;
+    font-size: 21px;
+}
+p,li{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.fst, .snd, .call-to-action{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    img{
+        width: 80px;
+    }
+    ul{
+        display: flex;
+        li{
+            padding: .5rem;
+            list-style-type: none;
+        }
+    }
+}
+button{
+    border-radius: 1.5rem;
+    font-weight: bold;
+    border: none;
+    color: $color-text;
+    background-color: #4cc1d3;
+    padding: 1rem;
+    margin: 1.5rem;
+    width: 75%;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+.snd{
+    div:nth-child(1){
+        padding: 6rem .5rem 4rem .5rem;
+    }
+    div:nth-child(2), div:nth-child(3), div:nth-child(4){
+        padding: 0rem .5rem 4rem .5rem;
+    }
+}
+.a_th{
+    color: #4cc1d3;
+    text-decoration: none;
+    border-bottom: 1px solid #4cc1d3;
+    padding-bottom: 5px;
+}
+.fth{
+    margin: 7rem 0;
+    .card_bgc_testimonial{
+        background-color: $bgc-testimonial;
+        margin: 1.5rem;
+        padding: 1.5rem;
+        div{
+            display: flex;
+            flex-direction: row;
+            padding: .5rem;
+            align-items: center;
+            p{
+                padding: .5rem;
+                span{
+                    font-weight: bold;
+                }
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+        }
+        
+    }
+}
+
+.call-to-action{
+    background-color: $bgc-testimonial;
+    padding: 2rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;    
+    position: relative;
+    top: 10rem;
+    div{
+        input{
+            margin-top: 1rem;
+            width: 75%;
+            height: 3rem;
+            border-radius: 3rem;
+            padding: 1rem;
+            -webkit-border-radius: 3rem;
+            -moz-border-radius: 3rem;
+            -ms-border-radius: 3rem;
+            -o-border-radius: 3rem;
+        
+        }
+    }
+}
+
+footer{
+    padding-top: 12rem;
+    img{
+        padding: 1rem;
+    }
+    .list1{
+        padding: 1rem 3rem;
+        li:first-child{
+            list-style-image: url(../img/icon-location.svg);
+        }
+        li:nth-child(2){
+            list-style-image: url(../img/icon-phone.svg);
+        }
+        li:nth-child(3){
+            list-style-image: url(../img/icon-email.svg);
+        }
+    }
+    ul{
+        padding: 1rem;
+        li{
+        list-style-type: none;
+        padding: .5rem;
+        }
+    }
+}
+@media screen and (min-width:800px){
+    .fst{
+        width: 60%;
+        margin: 0 auto;
+        button{
+            width: 50%;
+        }
+    }
+    .snd{
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 80%;
+        margin: 0 auto;
+        div:nth-child(1){
+            padding-top: 1rem;
+        }
+    }
+    .th{
+        div{
+            width: 50%;
+        }
+        display: flex;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .fth{
+        display: flex;
+        margin: 4rem 4rem 0 4rem;
+    }
+    .call-to-action{
+        width: 70%;
+        margin: 0 auto;
+    }
+    footer{
+        div{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 1400px;
+        }
+    }
+}
