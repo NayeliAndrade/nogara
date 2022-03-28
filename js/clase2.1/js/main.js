@@ -65,7 +65,7 @@ if (aciertos == 30) {
     console.log('Hola');
 } 
 
-/* switch (aciertos) {
+/* switch (aciertos) { solo puedes poner variables y no puedes poner operadores logicos solo casos especificos
     case 1: aciertos == 30
         console.log('Tu calificación es 6');
         break;
@@ -80,6 +80,7 @@ if (aciertos == 30) {
         break;
         default:
             console.log('Escribe bien');
+
 } */
 
 
