@@ -1,0 +1,86 @@
+.attribution { font-size: 11px; text-align: center; padding-bottom: 1rem;}
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --h2:hsl(234, 12%, 34%);
+    --line-card1:hsl(180, 62%, 55%);
+    --line-card2:hsl(0, 78%, 62%);
+    --line-card3:hsl(34, 97%, 64%);
+    --line-card4:hsl(212, 86%, 64%);
+    --p:hsl(229, 6%, 66%);
+    --white:hsl(0, 0%, 98%);
+}
+h1,p{
+    color: var(--p);
+    font-weight: 200; 
+    line-height: 1.5;
+}
+h1{
+    font-size: 26px;
+}
+header:first-child{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+span,h2{
+    color: var(--h2);
+    font-weight: 600;
+}
+main{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 1rem;
+}
+
+.card{
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    border-radius: .5rem;
+    box-shadow: -1px 5px 9px 0px hsl(234, 12%, 34%);
+    margin: 1rem;
+    max-width: 350px;
+    max-width: 375px;
+    padding: 1.5rem;
+}
+.card div{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 1rem;
+}
+section > div:nth-child(1){
+    border-top: 4px solid var(--line-card1);
+}
+div > div:nth-child(1){
+    border-top: 4px solid var(--line-card2);
+}
+div > div:nth-child(2){
+    border-top: 4px solid var(--line-card3);
+}
+section > div:nth-child(3){
+    border-top: 4px solid var(--line-card4);
+}
+@media screen and (min-width:400px) {
+    .card{
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        max-width: 370px;
+    }
+}
+@media screen and (min-width:1200px){
+   section{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+}
