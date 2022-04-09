@@ -1,0 +1,22 @@
+body{
+    padding: 1rem;
+}
+.click{
+    background-color: rgb(226, 138, 49);
+    padding: 1rem 2rem;
+    margin: 1rem;
+    color: antiquewhite;
+}
+span.click:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
+button{
+    padding: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin: 1rem;
+}
