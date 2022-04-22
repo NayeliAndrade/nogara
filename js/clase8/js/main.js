@@ -1,4 +1,4 @@
-"use strict"; /* usar modo estricto */
+"use strict"; 
 
 /* funciones */
 /* var usuario = prompt('cual es tu nombre'); 
