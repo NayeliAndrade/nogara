@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="cel">
+        <div class="camara">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <input type="text" id="texto" placeholder="Ingresa tu tarea aqui...">
+        <button onclick="enviar()">Agregar</button>
+       
+        <div>
+        <ul>
+            <li>ls<div class="iconos"><span class="haciendo"><i class="fa-solid fa-hourglass-start"></i></span>
+                <span class="terminado"><i class="fa-solid fa-hourglass-end"></i></span>
+                <span class="eliminar"><i class="fa-solid fa-hourglass-empty"></i></span></div></li> 
+            
+        </ul>
+
+        </div>
+    </div>
+   <!-- codigo de color 
+    pendiente rojo
+    finalizada verde 
+    haciendo amarilla
+    boton para editar texto 
+    btn eliminar-->
+    <script src="js/main.js"></script>
+</body>
+</html>

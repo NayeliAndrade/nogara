@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 350px;
+    height: 100vh;
+    place-content: center;
+    background-image: url(../img/space-g51f879b8c_1920.jpg);
+}
+.cel{
+    border: 8px solid #fff;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.camara{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+}
+.camara div:nth-child(1),
+.camara div:nth-child(2){
+    background-color: rgb(132, 130, 130);
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.camara div:nth-child(1){
+    width: 14px;
+    height: 14px;
+    margin-left: .5rem;
+}
+.camara div:nth-child(2){
+    width: 10px;
+    height: 10px;
+}
+.camara div:nth-child(3){
+    width: 100px;
+    height: 10px;
+    margin-left: .5rem;
+    background-color: rgb(132, 130, 130);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+input{
+    padding: .3rem;
+    margin: 1rem;
+    
+}
+button{
+    width: 60px;
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+    padding: .3rem;
+}
+ul{
+    padding: 1rem;
+    color: #fff;
+    list-style-type: none;
+    
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.haciendo{
+    color: yellow;
+}
+.terminado{
+    color: green;
+}
+.eliminar{
+    color: red;
+}
