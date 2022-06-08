@@ -1,49 +1,70 @@
 "use strict";
 let listaCompleta = [];
-let texto = document.getElementById('texto');
+let numero = 0;
+let index = 0; 
+let numeroColor = 0;
+const texto = document.getElementById('texto');
 
-let guardarLista = document.getElementsByTagName('ul')[0];
-let iconos = document.getElementsByClassName('iconos');
-
-function limpiarInput(texto){
-    document.getElementById('texto').value = '';
+const limpiarInput = (input) =>{
+    texto.value = '';
 }
 
-function enviar(){
-    let li = document.createElement('li');
-    li.textContent = texto.value;
-    guardarLista.appendChild(li);
+const btnEviar = document.getElementsByTagName('button')[0];
+btnEviar.addEventListener("click", Datos);
+
+function Datos(){
+    console.log(texto.value);
     
-    console.log(guardarLista);
-    console.log(li);
-    limpiarInput(texto);
-} 
-
-/* function agregarIconos(){
-} */
-
-
-/* const agregar = texto => {
-    listaCompleta.push(texto);
-};
-console.log(agregar); */
-
-/* function Datos(tarea, estatus){
-    this.tarea = tarea;
-    this.estatus = estatus;
-} */
-
-/* 
-
-if (Datos.estatus === 1) {
-    console.log('Haciendo');
-}else if (Datos.estatus ===2){
-    console.log('Pendiente');
-}else if (Datos.estatus ===3){
-    console.log('Finalizado');
-}else{
-    console.log('error');
+    let crearTarea ={
+        numero: numero++,
+        nombreTarea: texto.value
+        }
+        listaCompleta.push(crearTarea);
+    console.log(JSON.stringify(listaCompleta));
+    imprimirEnPantalla();
+    limpiarInput(texto.value);
+}
+    
+const imprimirEnPantalla = ()=>{
+    const guardarLista = document.getElementsByTagName('ul')[0];
+    
+    let li = document.createElement('li');
+    li.innerHTML = `
+    <button class="color" id="estatus_${index}" onclick="estatus(${index})"></button>
+    ${listaCompleta[index++].nombreTarea}
+    <div class="iconos">
+        <span class="editar"><i class="fa-solid fa-pencil"></i></span>
+        <span class="iconoBorrar" onclick="borrar()"><i class="fa-solid fa-trash-can"></i></i></span>
+        </div>
+    `;
+    guardarLista.appendChild(li);
 }
 
- */
+const estatus = () => {
+    let colores = ["red", "yellow", "green"];
+    let btnColor = document.getElementsByClassName('color')[0];
+    btnColor.style.backgroundColor = colores[numeroColor];
+    numeroColor++;
+    if (numeroColor === colores.length){
+        numeroColor = 0;
+    }else{
+        numeroColor++;
+        numeroColor--;
+    }
+}
 
+/* const setDatos = (crearTarea) => {
+    let datos = JSON.stringify(listaCompleta);
+    console.log(datos);
+    localStorage.setItem('lista',datos);
+    getDatos();
+}
+
+const getDatos = () => {
+    let bd = localStorage.getItem('lista');
+    listaCompleta = JSON.parse(bd);
+    console.log(bd);
+    console.log(bd.length);
+    Datos(JSON.parse(bd));
+} */
+/* alt + 96 backtics*/
