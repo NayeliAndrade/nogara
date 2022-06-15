@@ -32,7 +32,7 @@ function color(){
 function cambiarColores(){
     span2.style.backgroundColor = colores[index];
     index++; 
-    if (index == colores.length -1){
+    if (index == colores.length){
         index = 0; 
     }else{
         index++;
