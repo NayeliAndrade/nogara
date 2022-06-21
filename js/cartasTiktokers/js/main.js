@@ -1,6 +1,6 @@
 const tiktokers = [
     {
-        nombre: 'Luis angel',
+        nombre: 'Luis Angel',
         estrellas: 10,
         tipo: '[Frio/ADA]',
         info: 'Este monstruo de angular, se alimenta de JavaScript, su debilidad son los corridos tumbados',
@@ -40,7 +40,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Gerardo Schekaiban',
+        nombre: 'Gera Schekaiban',
         estrellas: 5,
         tipo: '[Guerrero/Fusion]',
         info: 'Poder especial "Yo soy tu amigo fiel de la programacion" aumenta el poder de tus otros programadores en el campo de batalla, debilidad Andy',
@@ -70,7 +70,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Arelis reyes',
+        nombre: 'Arelis Reyes',
         estrellas: 8,
         tipo: '[dragon]',
         info: 'Alias Chica Python, habilidad dar consejos de programación y evangelizar con su fuego de dragon.py debilidad Maeva',
@@ -80,7 +80,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Francisco jiménez',
+        nombre: 'Francisco Jiménez',
         estrellas: 2,
         tipo: '[Lanzador de conjuros / Efecto]',
         info: 'Alias Pamsho.dev hsbilidad maestro en las artes místicas de JavaScript y sacar tiempo para redes sociales, stream, trabajar y estudiar pero además tener pareja, debilidad la vacuna del covid',
@@ -90,7 +90,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Toledo floang',
+        nombre: 'Toledo Floang',
         estrellas: 12,
         tipo: '[Bestía Divina/EFECTO]',
         info: 'Alias: Ingesaurio. Habilidad especial: Dañar libros de ingeniería y dar consejos de ingenieria. En cada ronda aumenta 500ATK.',
@@ -100,7 +100,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Stefan castillo',
+        nombre: 'Stefan Castillo',
         estrellas: 10,
         tipo: '[Hechicero/EFECTO]',
         info: 'Habilidad para las artes oscuras del CSS mágico. Habilidad especial: Logos con CSS. Debilidad: Usar JavaScript le quita 100 ATK',
@@ -120,7 +120,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Jessica azcona',
+        nombre: 'Jessica Azcona',
         estrellas: 9,
         tipo: '[hechicera]',
         info: 'Hablilidad magia antigua que es capaz de borrar cuentas de github, debilidad C, C++',
@@ -130,7 +130,7 @@ const tiktokers = [
 
     },
     {
-        nombre: 'David corteza',
+        nombre: 'David Corteza',
         estrellas: 12,
         tipo: '[Bestia/Divino]',
         info: 'Habilidad hacer carnitas asadas, habiliad especial titktok geniales de risa, debilidad el hermano de Kuriboh le resta la mitad de DEF y ATK',
@@ -150,28 +150,28 @@ const tiktokers = [
 
     },
     {
-        nombre: 'Joss pelcastre',
+        nombre: 'Joss Pelcastre',
         estrellas: 8,
         tipo: '[Metal/Efect]',
         info: 'Habilidad divina de charla astral, especial hackear Facebook de tu ex, si se encuentra al hermano de Kuriboh se igualan sus ATK y DEF',
         atk: 1900,
         def: 1400,
-        img: 'url(img/JOSS PELCASTRE.jpeg)',
+        img: 'url(img/JOSSPELCASTRE.jpeg)',
 
     },
     {
-        nombre: 'David portilla',
+        nombre: 'David Portilla',
         estrellas: 8,
         tipo: '[Mona China / Metal / Efect]',
         info: 'Alias el Frontend Mecatronico Habilidad especial jugar pokimon con el Rodo Ferro y sus monas chinas, si en el campo se encuentra a Pamsho.dev incrementa ambos su poder con esteroides a 2500 ATK y DEF',
         atk: 1900,
         def: 1900,
-        img: 'url(img/DAVID PORTILLA.jpeg)',
+        img: 'url(img/DAVIDPORTILLA.jpeg)',
 
     },
     {
         nombre: 'MaybeMar',
-        estrellas: 'mnmnmnmnmnmn',
+        estrellas: 12,
         tipo: '[Frio/ADA]',
         info: 'MaybeMAr eres la mejor programadora del mundo 🙂 aparte estas demasiado hermosa, todo eso acampañado de una hermosa carita de angel',
         atk: 5000,
@@ -186,26 +186,19 @@ const pintar = () => {
     let carta = document.getElementsByClassName('cartas')[0];
     console.log(carta);
     for (let index = 0; index < tiktokers.length; index++) {
-        const imagenes = () =>{
-            /* const imgTiktokers = () => {
-                let bgiTiktokers = document.getElementById('imgTT_' + index);
-                bgiTiktokers.style.backgroundImage = '${tiktokers[index].img}';
-            } 
-            
-            imgTiktokers();*/
 
-            for (let contarImg = 0; contarImg < tiktokers[index].estrellas.length; contarImg++) {
-                console.log(contarImg, tiktokers[index].nombre);
+        const imagenes = () =>{
+            for (let contarImg = 0; contarImg < tiktokers[index].estrellas; contarImg++) {
+                console.log(contarImg, tiktokers[index].estrellas);
                
                 let contenedorEstrella = document.createElement('div');
                 contenedorEstrella.innerHTML = `<img src="img/estrella.png" class="imgEstrella" alt="estrella" class="imgEstrella"></img>`;
-                let estrella = document.getElementsByClassName('estrella')[0];
+                let estrella = document.getElementsByClassName('estrella')[index];
+                console.log(estrella);
                 estrella.appendChild(contenedorEstrella);
             }
-            /* fala estellas y img*/
+            
         }
-        
-        imagenes();
         
         let amarillo = document.createElement('div');
         amarillo.innerHTML = `
@@ -213,7 +206,7 @@ const pintar = () => {
         <div class="amarillo">
             <div class="titulo">${tiktokers[index].nombre}</div>
             <div class="estrella"></div>
-            <div class="img" id="imgTT">${tiktokers[index].img}</div>
+            <div class="img"></div>
             <div class="informacion">
                 <div class="tipo">${tiktokers[index].tipo}</div>
                 <div class="descripcion">${tiktokers[index].info}</div>
@@ -222,9 +215,18 @@ const pintar = () => {
         </div>
     </div>`;
         carta.appendChild(amarillo);
+        imagenes();
+    }
 
+    const imgTiktokers = () => {
+
+        for (bgi = 0; bgi < tiktokers.length; bgi++){
+         let bgiTiktokers = document.getElementsByClassName('img')[bgi];
+        bgiTiktokers.style.backgroundImage = tiktokers[bgi].img;   
+        }
         
     }
+    imgTiktokers();
 }
 
 pintar();
