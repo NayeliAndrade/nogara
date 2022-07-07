@@ -20,7 +20,9 @@ function Datos(){
         nombreTarea: texto.value
         }
         listaCompleta.push(crearTarea);
-    /* console.log(JSON.stringify(listaCompleta)); */
+
+       
+
     setDatos();
     imprimirEnPantalla();
     limpiarInput(texto.value);
@@ -71,10 +73,13 @@ const getDatos = () => {
 /* alt + 96 backtics*/
 
 
-/* const borrar = () => {   
-    console.log('sd');
-}
+/* const borrar = (crearTarea) => {   
+    let btnBorrar = document.getElementsByClassName('iconoBorrar');
+    btnBorrar.listaCompleta.pop(crearTarea);
 
-const editar = () => {
+    console.log(btnBorrar);
+} */
+
+/* const editar = () => {
     console.log('sdf');
 } */
