@@ -27,12 +27,18 @@ const cambiarColor = () =>{
 
     function cambiarBGC(){
         let body = document.getElementsByTagName('body')[0];
+        let pSombremi = document.getElementsByClassName('pSobremi')[0];
+        let gitI = document.getElementsByClassName('github')[0];
 
         if (contador === true){
-            body.style.backgroundColor = 'rgb(4 5 6)';
+            body.style.backgroundColor = 'rgb(3 10 18 / 93%)';
+            pSombremi.style.color = '#fff';
+            gitI.style.color='white'
             contador = false;
         }else{
             body.style.backgroundColor = 'rgb(241 234 234 / 21%)';
+            pSombremi.style.color = 'initial'
+            gitI.style.color='initial'
             contador = true;
         }
 
